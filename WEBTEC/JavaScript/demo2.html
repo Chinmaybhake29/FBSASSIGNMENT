@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sub()
+        {
+            inp1=document.getElementById("inp1");
+            inp2=document.getElementById("inp2");
+
+            no1=parseInt(inp1.value);
+            no2=parseInt(inp2.value);
+
+            res=no1-no2;
+            document.getElementById("res").innerHTML="Result is: "+res;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button onclick="sub()">Sub</button>
+    <span id="res">Output Display here</span>
+</body>
+</html>

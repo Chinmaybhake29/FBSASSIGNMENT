@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiseri(){
+            no=parseInt(document.getElementById('inp').value)
+            res=""
+            for(i=1;i<=10;i++){
+                res=res+no*i+"<br>"
+            }
+            console.log(res)
+            document.getElementById('res').innerHTML=res
+        }
+        function color(){
+            document.getElementById("res").style="color:"+color
+        }
+    </script>
+</head>
+<body>
+     <input type="text" id="inp"><br />
+    <button onclick="multiseri()">Print</button><br />
+    <button onclick="color('blue')">Blue</button>
+    <span id="res">Output Display here</span>
+</body>
+</html>

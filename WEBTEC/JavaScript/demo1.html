@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function applycss() {
+            para = document.getElementById("para");
+
+            if (document.getElementById("chk1").checked) {
+                para.style.border = "2px solid red";
+            } else {
+                para.style.border = "none";
+            }
+
+            if (document.getElementById("chk2").checked) {
+                if (document.getElementById("red").checked) {
+                    para.style.color = "red";
+                } else if (document.getElementById("green").checked) {
+                    para.style.color = "green";
+                } else if (document.getElementById("blue").checked) {
+                    para.style.color = "blue";
+                } else {
+                    para.style.color = "black"; 
+                }
+            } else {
+                para.style.color = "black"; 
+            }
+        }
+    </script>
+</head>
+<body>
+   <p id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ipsa blanditiis exercitationem commodi, voluptatum veniam vero voluptates ab similique aperiam ullam temporibus dolor culpa ut voluptatem amet, tempore optio fuga!  
+   </p>
+
+   <input type="checkbox" id="chk1" onchange="applycss()"> Border
+   <input type="checkbox" id="chk2" onchange="applycss()"> Color
+   <br>
+
+   <input type="checkbox" id="red" onchange="applycss()"> Red
+   <input type="checkbox" id="green" onchange="applycss()"> Green
+   <input type="checkbox" id="blue" onchange="applycss()"> Blue
+
+</body>
+</html>

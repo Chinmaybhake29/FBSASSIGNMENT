@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function div() {
+            inp1=document.getElementById("inp1")
+            inp2=document.getElementById("inp2")
+
+            n1=parseInt(inp1.value)
+            n2=parseInt(inp2.value)
+
+            result=n1/n2;
+
+            document.getElementById("result").innerHTML="Result is: "+result;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="inp1" placeholder="Enter first number">
+    <input type="number" id="inp2" placeholder="Enter second number">
+    <button onclick="div()">Division</button>
+    <span id="result"></span>
+</body>
+</html>

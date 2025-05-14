@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+        inp1=document.getElementById("inp1")
+        inp2=document.getElementById("inp2")
+
+        no1=parseInt(inp1.value)
+        no2=parseInt(inp2.value)
+        res=no1+no2
+        console.log("Result is: "+res)
+        document.getElementById("res").innerHTML="Result is: "+res
+        }
+        function sub()
+        {
+            inp1=document.getElementById("inp1");
+            inp2=document.getElementById("inp2");
+
+            no1=parseInt(inp1.value);
+            no2=parseInt(inp2.value);
+
+            res=no1-no2;
+            document.getElementById("res").innerHTML="Result is: "+res;
+        }
+        function mul()
+        {
+            inp1=document.getElementById("inp1")
+            inp2=document.getElementById("inp2")
+            
+            n1=parseInt(inp1.value)
+            n2=parseInt(inp2.value);
+
+            result=n1*n2;
+            document.getElementById("result").innerHTML="Result is: " + result;
+        }
+        function div() {
+            inp1=document.getElementById("inp1")
+            inp2=document.getElementById("inp2")
+
+            n1=parseInt(inp1.value)
+            n2=parseInt(inp2.value)
+
+            result=n1/n2;
+
+            document.getElementById("result").innerHTML="Result is: "+result;
+        }
+</script>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="mul()">Mul</button>
+    <button onclick="div()">Div</button>
+    
+    <span id="res">Output will display here</span>
+</body>
+</html>

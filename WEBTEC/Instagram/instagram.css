@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.left h2 {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+}
+
+.right i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.story-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.story {
+  text-align: center;
+  color: black;
+}
+
+.story img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-image-slice: 1;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.username {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.time {
+  color: gray;
+  margin-left: 5px;
+}
+
+.menu {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.like-button, .share-button, .comment-button {
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.like-button:hover, .share-button:hover, .comment-button:hover {
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #00376b;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  font-size: 10px;
+  color: gray;
+}
